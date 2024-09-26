@@ -12,7 +12,7 @@
          window.botpressWebChat.onEvent( (event) => {
          if (event.type 'MESSAGE.RECEIVED) {
          console.log("A new message was received!")
-         if(event.value.payload.text == "You can choose a file'){
+         if(event.value.payload.text == "You can choose a file"){
          const fileInput - document.createElement("input"); fileInput.type = 'file';
          fileInput.addEventListener("change", (event) -> {
          const file event.target.files[0]; console.log('Selected file:", file); const reader = new FileReader();
